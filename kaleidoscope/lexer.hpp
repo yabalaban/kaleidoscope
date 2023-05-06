@@ -22,8 +22,8 @@ enum class Token {
     kNumber,
 };
 
-static std::string identifier;  // Filled in if Token::kIdentifier
-static double number;           // Filled in if Token::kNumber
+extern std::string identifier;  // Filled in if Token::kIdentifier
+extern double number;           // Filled in if Token::kNumber
 
 extern auto GetToken() -> std::variant<Token, char>;
 

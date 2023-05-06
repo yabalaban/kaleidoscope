@@ -7,10 +7,13 @@
 
 #include <iostream>
 #include "lexer.hpp"
+#include "parser.hpp"
 
 int main(int argc, const char * argv[]) {
-    auto token = GetToken();
-    std::visit([](const auto &x) { std::cout << static_cast<std::underlying_type<Token>::type>(x) ; }, token);
-    std::cout << "\n";
+    binop_precedence['<'] = 10;
+    binop_precedence['+'] = 20;
+    binop_precedence['-'] = 20;
+    binop_precedence['*'] = 40;
+    MainLoop();
     return 0;
 }

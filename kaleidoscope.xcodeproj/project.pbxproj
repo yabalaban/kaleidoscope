@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E241ECA12A05B007004D70E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E241ECA02A05B007004D70E9 /* main.cpp */; };
 		E241ECA92A05B02C004D70E9 /* lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E241ECA72A05B02C004D70E9 /* lexer.cpp */; };
+		E241ECAC2A05C12B004D70E9 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E241ECAA2A05C12B004D70E9 /* parser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,9 @@
 		E241ECA02A05B007004D70E9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E241ECA72A05B02C004D70E9 /* lexer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lexer.cpp; sourceTree = "<group>"; };
 		E241ECA82A05B02C004D70E9 /* lexer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lexer.hpp; sourceTree = "<group>"; };
+		E241ECAA2A05C12B004D70E9 /* parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cpp; sourceTree = "<group>"; };
+		E241ECAB2A05C12B004D70E9 /* parser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = parser.hpp; sourceTree = "<group>"; };
+		E241ECAD2A05C718004D70E9 /* ast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ast.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				E241ECA02A05B007004D70E9 /* main.cpp */,
+				E241ECAD2A05C718004D70E9 /* ast.hpp */,
+				E241ECAA2A05C12B004D70E9 /* parser.cpp */,
+				E241ECAB2A05C12B004D70E9 /* parser.hpp */,
 				E241ECA72A05B02C004D70E9 /* lexer.cpp */,
 				E241ECA82A05B02C004D70E9 /* lexer.hpp */,
 			);
@@ -125,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E241ECA92A05B02C004D70E9 /* lexer.cpp in Sources */,
+				E241ECAC2A05C12B004D70E9 /* parser.cpp in Sources */,
 				E241ECA12A05B007004D70E9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

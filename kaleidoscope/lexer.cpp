@@ -7,6 +7,9 @@
 
 #include "lexer.hpp"
 
+std::string identifier;
+double number;
+
 auto inline SkipWhitespaces(char *last) {
     while (isspace(*last)) {
         *last = getchar();
@@ -39,6 +42,7 @@ auto inline TryIdentifier(char *last) -> std::optional<Token> {
     if (identifier == "extern") {
         return Token::kExtern;
     }
+    
     return Token::kIdentifier;
 }
 
